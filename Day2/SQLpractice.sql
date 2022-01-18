@@ -24,9 +24,7 @@ select * from Products where ProductName like '_an%'
 
 select avg(unitsinstock) Average_Stock from Products
 
-select avg(unitsinstock) Average_Stock,
-sum(UnitsInStock) 'Total number of units'
-from Products
+ 
 
 select avg(unitprice) Average_Price
 from Products
@@ -112,6 +110,7 @@ Quantity, od.Unitprice*Quantity 'Product Price'
 from Products p join [Order Details] od
 on p.ProductId = od.ProductID
 order by ProductName, Quantity
+
 
 select ContactName 'Customer Name', CustomerId from Customers where customerID not in 
 (select CustomerID from orders)
