@@ -30,8 +30,8 @@ from titles
 where type = 'mod_cook' or type = 'psychology'
 
 --7) print all titles published before '1991-06-09 00:00:00.000'
-select * from titles
 
+select * from titles where pubdate < '1991-06-09 00:00:00.000'
 
 --8) Select all the authors from 'CA'
 select * from authors
@@ -55,6 +55,8 @@ group by pub_id
 
 --11) Print the first published title in every type
 select * from titles
+select type,min(pubdate) 'first published' from titles
+group by type
 
 --12) calculate the total royalty for every publisher
 
@@ -75,11 +77,16 @@ select * from publishers
 where state = 'CA'
 
 --16) Print the author name of books whcih have royalty more than the average royalty of all the titletes
-select royalty 'Royalty'
-from titles
-where royalty > avg(royalty)
+select concat (au_fname, ' ',au_lname) from authors where au_id in
+(select au_id from titleauthor where title_id in (
+select title_id from titles where royalty>
+(select avg(royalty) from titles)))
 
 --17) Print all the city and the number of pulishers in it, only if the city has more than one publisher
+select * from publishers
+select city, count(pub_id)'no of publishers' from publishers
+group by city
+having count(pub_id) >1
 
 --18) Print the total number of orders for every title
 select title_id 'title', COUNT(ord_num) 'Total orders'
@@ -145,15 +152,17 @@ join titles t on t.title_id = sa.title_id
 
 
 --28) Select the employees who have taken more than 2 orders
-select * from employee
+select * from sales
+select stor_id, count(ord_num)'Number of orders' from sales
+group by stor_id
+having count(ord_num)>2
 
 
 --29) Select all the titles and print the first order date (titles that have not be ordered should also be present)
-select title 'title', ord_date 'order date'
+select title, min(ord_date) 
 from titles t left outer join sales s
-on t.title_id = s.title_id
-order by 1
-
+on s.title_id = t.title_id
+group by title
 
 --30) select all the data from teh orderes and the authors table
 select * from sales cross join authors
