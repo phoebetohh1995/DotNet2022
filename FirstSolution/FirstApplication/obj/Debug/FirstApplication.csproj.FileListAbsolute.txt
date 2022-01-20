@@ -1,0 +1,8 @@
+C:\Phoebe\FirstSolution\FirstApplication\bin\Debug\FirstApplication.exe.config
+C:\Phoebe\FirstSolution\FirstApplication\bin\Debug\FirstApplication.exe
+C:\Phoebe\FirstSolution\FirstApplication\bin\Debug\FirstApplication.pdb
+C:\Phoebe\FirstSolution\FirstApplication\obj\Debug\FirstApplication.csproj.AssemblyReference.cache
+C:\Phoebe\FirstSolution\FirstApplication\obj\Debug\FirstApplication.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\FirstSolution\FirstApplication\obj\Debug\FirstApplication.csproj.CoreCompileInputs.cache
+C:\Phoebe\FirstSolution\FirstApplication\obj\Debug\FirstApplication.exe
+C:\Phoebe\FirstSolution\FirstApplication\obj\Debug\FirstApplication.pdb

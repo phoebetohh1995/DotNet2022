@@ -85,9 +85,9 @@ where p.pub_name = 'Algodata Infosystems'
 --Employee(id-identity starts in 100 inc by 1,
 --Name,age, phone cannot be null, gender)
 
-create table tblEmployee(
+create table Employee(
 
-empId int identity(100,1) primary key,
+empId int identity(100,1) primary key not null,
 empName varchar(50),
 empAge int,
 empPhone varchar(15) not null,
@@ -97,13 +97,14 @@ empGender varchar(10)
 --Salary(id-identity starts at 1 increments by 100,
 --Basic,HRA,DA,deductions)
 
-create table tblSalary
+
+create table Salary
 (
-salId int identity(1,100) primary key,
-base int,
-hra int,
-da int, 
-deductions int
+salId int identity(1,100) primary key not null,
+salBasic float,
+hra float,
+da float, 
+deductions float
 )
 
 --EmployeeSalary(transaction_number int,
@@ -111,12 +112,14 @@ deductions int
 --Salary_id reference Salary Id,
 --Date)
 
+drop table employeeSalary
+
 create table employeeSalary
 (
-transNo int identity(1,1) primary key,
-employee_id int references tblEmployee(empId),
-salary_id int references tblSalary(salId),
-tDate datetime
+transNo int primary key not null,
+empId int references Employee(empId),
+salId int references Salary(salId),
+tDate datetime 
 )
 
 --PS - In the emeployee salary table transaction number is the primary key
@@ -124,44 +127,75 @@ tDate datetime
 
 --Add a column email-varchar(100) to the employee table
 
-alter table tblEmployee
+alter table Employee
 add email varchar(100)
 
 --Insert few records in all the tables
 
-insert into tblEmployee values ('Phoebe toh','26','98765432','female','phoebe123@gmail.com')
-insert into tblEmployee values ('Brandon koh','23','91234567','male','brandonk@gmail.com')
-insert into tblEmployee values ('Tydus','18','91122334','male','tyduskzy@gmail.com')
+insert into Employee values ('Phoebe toh','26','98765432','female','phoebe123@gmail.com')
+insert into Employee values ('Brandon koh','23','91234567','male','brandonk@gmail.com')
+insert into Employee values ('Tydus','18','91122334','male','tyduskzy@gmail.com')
 
 
-insert into tblSalary values (2000,200,400,100)
-insert into tblSalary values (3000,300,500,200)
-insert into tblSalary values (4000,400,600,300)
+insert into Salary values (2000,200,400,100)
+insert into Salary values (3000,300,500,200)
+insert into Salary values (4000,400,600,300)
 
-insert into employeeSalary values (100,1,'2022-01-19')
-insert into employeeSalary values (101,101,'2022-01-19')
-insert into employeeSalary values (102,201,'2022-01-19')
+insert into employeeSalary values (1,100,1,'2022-01-19')
+insert into employeeSalary values (2,101,101,'2022-01-19')
+insert into employeeSalary values (3, 102,201,'2022-01-19')
 
-select * from tblEmployee
-select * from tblSalary
-select * from employeeSalary
 
 --Create a procedure which will print the total salary of employee by taking the employee id and the date
 --total = Basic+HRA+DA-deductions
 
-create proc proc_TotalSalary(@empId int,@date datetime)
+create proc proc_totalSal(@empId int, @date datetime)
+as 
+begin 
+	declare 
+	@total float
+	set @total = (select sum(s.salBasic + s.hra + s.da - s.deductions)
+	totalSal from employee e join employeeSalary es
+	on e.empId = es.empId join Salary s
+	on s.salId = es.salId
+	where e.empId = @empId)
+
+	print 'Total salary:' + cast (@total as varchar(20))
+end
+
+exec proc_totalSal 102, '2022-01-19'
+
+--Create a procudure which will calculate the average salary of an employee taking his ID
+
+create proc AvgSal(@empId int)
 as 
 begin
 	declare
-	@total float,
-	@basic float,
-	@hra float,
-	@da float,
-	@deduction float,
+	@avgSal float,
+	@totalSal float,
+	@timesSalary int
+
+	set @totalSal = (select sum(s.salBasic + s.hra + s.da - s.deductions)
+	totalSal from employee e join employeeSalary es
+	on e.empId = es.empId join Salary s
+	on s.salId = es.salId
+	where e.empId = @empId)
+	
+	set @timesSalary = (select count(es.empId) from employee e join employeeSalary es
+	on e.empId = es.empId join salary s
+	on s.salId = es.salId
+	where e.empId = @empId
+	group by es.empId)
+
+	set @avgSal = @totalSal / @timesSalary
+
+	print 'total salary :' + cast(@totalSal as varchar(20))
+	print 'total times of salary: ' + cast(@timesSalary as varchar(20))
+	print 'average salary: ' + cast(@avgSal as varchar(20))
 
 end
 
---Create a procudure which will calculate the average salary of an employee taking his ID
+exec AvgSal 102
 
 --Create a procedure which will catculate tax payable by employee
 --total - 100000 - 0%
@@ -169,7 +203,10 @@ end
 --200000 > total < 350000 - 6%
 --total > 350000 - 7.5%
 
+
+
 --15) Create a function that will take the basic,HRA and da returns the sum of the three
+
 
 --16) Create a cursor that will pick up every employee and print his details 
 --then print all the entries for his salary in the employeesalary table. 
