@@ -203,6 +203,58 @@ exec AvgSal 102
 --200000 > total < 350000 - 6%
 --total > 350000 - 7.5%
 
+create proc proc_calculateTax(@empId int)
+as
+begin
+declare
+	@count int
+	set @count = (select count(transNo) from employeeSalary where empId = @empId)
+	if(@count > 0)
+	begin
+	declare
+	@totalSalary float,
+	@totalBasic float,
+	@totalDeduction float,
+	@totalhra float,
+	@totalda float
+	
+	set @totalBasic = (select sum(s.salBasic) from Salary s
+						inner join employeeSalary es
+						on s.salID = es.salID
+						and empID = @empID)
+	set @totalDeduction = (select sum(deductions) from employeeSalary es
+							join Salary s
+							on s.salID = es.salID
+							where empID = @empID)
+	set @totalhra = (select sum(hra) from employeeSalary es
+							join Salary s
+							on s.salID = es.salID
+							where empID = @empID)
+	set @totalda = (select sum(da) from employeeSalary es
+							join Salary s
+							on s.salID = es.salID
+							where empID = @empID)
+	
+	set @totalSalary = (@totalBasic - @totalDeduction + @totalhra + @totalda)
+
+	print cast(@totalSalary as varchar(10))
+
+	if(@totalSalary <= 100000)
+	print 'Payable tax is : 0'
+
+	else if(@totalSalary > 100000 and @totalSalary <= 200000)
+	print 'Payable tax is : ' + cast(@totalSalary * 0.05 as varchar(10))
+
+	else if(@totalSalary > 200000  and @totalSalary <= 350000 )
+	print 'Payable tax is : ' + cast(@totalSalary * 0.06 as varchar(10))
+
+	else if(@totalSalary > 350000 )
+	print 'Payable tax is : ' + cast(@totalSalary * 0.075 as varchar(10))
+	end
+
+	else
+	print 'Payable tax is : 0'
+end
 
 
 --15) Create a function that will take the basic,HRA and da returns the sum of the three

@@ -11,7 +11,7 @@ namespace Assignment_4_solutions
         static void Main(string[] args)
         {
 
-            //solutions s = new solutions();
+            solutions s = new solutions();
             //s.qn1();
             //s.qn2();
             //s.qn3();
@@ -19,7 +19,7 @@ namespace Assignment_4_solutions
             //s.qn5();
             //s.qn6();
             //s.qn7();
-            //s.qn8();
+            s.qn8();
             //s.qn9();
             //s.qn10();
             //s.qn11();
