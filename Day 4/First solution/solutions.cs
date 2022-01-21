@@ -170,25 +170,25 @@ namespace Assignment_4_solutions
         }
         public void qn8()
         {
-            int num;
-            int sum;
-            Console.WriteLine("Please enter a number & enter a negative number to stop: ");
-            num = Convert.ToInt32(Console.ReadLine());
-            sum = 0;
-            while (num > 0)
+            int num, sum = 0;
+            Console.WriteLine("Enter negative number to stop");
+
+            do
             {
-                sum += num;
-                if (num % 7 == 0)
-                {
-                    Console.WriteLine(num + " is divisible by 7");
-                }
-                Console.WriteLine("Please enter a number & enter a negative number to stop: ");
+                Console.Write("Please enter a number: ");
                 num = Convert.ToInt32(Console.ReadLine());
-            }
-            Console.WriteLine("Result: ");
-            Console.WriteLine("The sum of the numbers is " + sum);
+
+                if (num % 7 == 0)
+                    sum += num;
+
+
+            } while (num >= 0);
+
+            Console.WriteLine("Result : ");
+            Console.WriteLine("Total sum of numbers which are divisible by 7 is " + sum);
 
         }
+
 
 
 
