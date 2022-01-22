@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aef4b510-36b4-4400-b6d5-8777bbac4635": {
+      "ProjectGuid": "aef4b510-36b4-4400-b6d5-8777bbac4635",
+      "DisplayName": "Day5Assignment",
+      "ColorIndex": 0
+    },
+    "1798a0db-53d3-4c68-9544-84b489677929": {
+      "ProjectGuid": "1798a0db-53d3-4c68-9544-84b489677929",
+      "DisplayName": "ClinicModelsLibrary",
+      "ColorIndex": 1
+    },
+    "ebb6f150-de26-42f9-b88d-6ba0b8d0c85e": {
+      "ProjectGuid": "ebb6f150-de26-42f9-b88d-6ba0b8d0c85e",
+      "DisplayName": "ClinicModelsLibrary",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

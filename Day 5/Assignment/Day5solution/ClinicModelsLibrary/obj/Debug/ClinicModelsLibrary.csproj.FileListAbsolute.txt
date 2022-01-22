@@ -1,0 +1,6 @@
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\obj\Debug\ClinicModelsLibrary.csproj.AssemblyReference.cache
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\obj\Debug\ClinicModelsLibrary.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\bin\Debug\ClinicModelsLibrary.dll
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\bin\Debug\ClinicModelsLibrary.pdb
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\obj\Debug\ClinicModelsLibrary.dll
+C:\Phoebe\Day 5\Assignment\Day5solution\ClinicModelsLibrary\obj\Debug\ClinicModelsLibrary.pdb

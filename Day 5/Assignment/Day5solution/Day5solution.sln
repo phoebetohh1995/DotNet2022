@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5Assignment", "Day5Assignment\Day5Assignment.csproj", "{AEF4B510-36B4-4400-B6D5-8777BBAC4635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicModelsLibrary", "ClinicModelsLibrary\ClinicModelsLibrary.csproj", "{EBB6F150-DE26-42F9-B88D-6BA0B8D0C85E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF4B510-36B4-4400-B6D5-8777BBAC4635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF4B510-36B4-4400-B6D5-8777BBAC4635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF4B510-36B4-4400-B6D5-8777BBAC4635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF4B510-36B4-4400-B6D5-8777BBAC4635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB6F150-DE26-42F9-B88D-6BA0B8D0C85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB6F150-DE26-42F9-B88D-6BA0B8D0C85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB6F150-DE26-42F9-B88D-6BA0B8D0C85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB6F150-DE26-42F9-B88D-6BA0B8D0C85E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CCC1082-2C2A-4265-873D-20A90B9C98DB}
+	EndGlobalSection
+EndGlobal

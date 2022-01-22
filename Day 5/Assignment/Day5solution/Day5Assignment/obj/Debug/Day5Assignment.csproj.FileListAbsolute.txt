@@ -1,0 +1,11 @@
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.csproj.AssemblyReference.cache
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\bin\Debug\Day5Assignment.exe.config
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\bin\Debug\Day5Assignment.exe
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\bin\Debug\Day5Assignment.pdb
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\bin\Debug\ClinicModelsLibrary.dll
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\bin\Debug\ClinicModelsLibrary.pdb
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.csproj.CopyComplete
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.exe
+C:\Phoebe\Day 5\Assignment\Day5solution\Day5Assignment\obj\Debug\Day5Assignment.pdb
