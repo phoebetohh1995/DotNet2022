@@ -18,12 +18,8 @@ namespace Day5Assignment
         static void Main(string[] args)
         {
             ManageUser program = new ManageUser();
-            program.registerUser();
-
-            User u = new User();
-            u.takeUserInfo();
-            u.displayUserInfo();
-
+            program.GetUserDetails();
+            program.PrintUserDetails();
             Console.ReadKey();
         }
     }

@@ -15,12 +15,8 @@ using System.Threading.Tasks;
             public int age { get; set; }
             public string type { get; set; }
 
-        public User()
-        {
-            type = "Patient";
-        }
 
-        public virtual void takeUserInfo()
+        public void takeUserInfo()
         {
             Console.WriteLine("Please enter user ID  : ");
             id = Convert.ToInt32(Console.ReadLine());
@@ -34,18 +30,14 @@ using System.Threading.Tasks;
             Console.WriteLine("Please enter user age  : ");
             age = Convert.ToInt32(Console.ReadLine());
         }
-        public virtual void displayUserInfo()
+        public override string ToString()
         {
-            Console.WriteLine("User Id       :  {0}\n" +
-                              "User Name     :  {1}\n" +
-                              "User Password :  {2}\n" +
-                              "User Age      :  {3}\n" +
-                              "User Type     :  {4}\n",
-                              id, name, password, age, type);
+            return " User ID " + id + "\n User Name " + name + "\n Type " + type;
         }
 
+
     }
- 
-    }
+
+}
 
 

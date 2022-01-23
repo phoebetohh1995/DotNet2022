@@ -87,7 +87,7 @@ where p.pub_name = 'Algodata Infosystems'
 
 create table Employee(
 
-empId int identity(100,1) primary key not null,
+empId int identity(100,1) primary key,
 empName varchar(50),
 empAge int,
 empPhone varchar(15) not null,
@@ -116,10 +116,10 @@ drop table employeeSalary
 
 create table employeeSalary
 (
-transNo int primary key not null,
-empId int references Employee(empId),
-salId int references Salary(salId),
-tDate datetime 
+transNo int primary key,
+empId int constraint fk_empSal references Employee(empId),
+salId int constraint fl_emplSal1 references Salary(salId),
+tDate datetime unique
 )
 
 --PS - In the emeployee salary table transaction number is the primary key
@@ -141,15 +141,15 @@ insert into Salary values (2000,200,400,100)
 insert into Salary values (3000,300,500,200)
 insert into Salary values (4000,400,600,300)
 
-insert into employeeSalary values (1,100,1,'2022-01-19')
-insert into employeeSalary values (2,101,101,'2022-01-19')
-insert into employeeSalary values (3, 102,201,'2022-01-19')
+insert into employeeSalary values (1,100,1,'2022-01-20 00:00:00.000')
+insert into employeeSalary values (2,101,101,'2022-01-21 00:00:00.000')
+insert into employeeSalary values (3, 102,201,'2022-01-19 00:00:00.000')
 
 
 --Create a procedure which will print the total salary of employee by taking the employee id and the date
 --total = Basic+HRA+DA-deductions
 
-create proc proc_totalSal(@empId int, @date datetime)
+create proc proc_CalTotalSal(@empId int, @date datetime)
 as 
 begin 
 	declare 
@@ -158,16 +158,16 @@ begin
 	totalSal from employee e join employeeSalary es
 	on e.empId = es.empId join Salary s
 	on s.salId = es.salId
-	where e.empId = @empId)
+	where e.empId = @empId and es.tDate = @date)
 
 	print 'Total salary:' + cast (@total as varchar(20))
 end
 
-exec proc_totalSal 102, '2022-01-19'
+exec proc_CalTotalSal 102, '2022-01-19 00:00:00.000'
 
 --Create a procudure which will calculate the average salary of an employee taking his ID
 
-create proc AvgSal(@empId int)
+create proc AvgSalCalculate(@empId int)
 as 
 begin
 	declare
@@ -195,7 +195,7 @@ begin
 
 end
 
-exec AvgSal 102
+exec AvgSalCalculate 102
 
 --Create a procedure which will catculate tax payable by employee
 --total - 100000 - 0%
@@ -203,64 +203,100 @@ exec AvgSal 102
 --200000 > total < 350000 - 6%
 --total > 350000 - 7.5%
 
-create proc proc_calculateTax(@empId int)
+create proc calculateTax(@empId int, @date datetime)
 as
 begin
 declare
-	@count int
-	set @count = (select count(transNo) from employeeSalary where empId = @empId)
-	if(@count > 0)
-	begin
-	declare
-	@totalSalary float,
-	@totalBasic float,
-	@totalDeduction float,
-	@totalhra float,
-	@totalda float
-	
-	set @totalBasic = (select sum(s.salBasic) from Salary s
-						inner join employeeSalary es
-						on s.salID = es.salID
-						and empID = @empID)
-	set @totalDeduction = (select sum(deductions) from employeeSalary es
-							join Salary s
-							on s.salID = es.salID
-							where empID = @empID)
-	set @totalhra = (select sum(hra) from employeeSalary es
-							join Salary s
-							on s.salID = es.salID
-							where empID = @empID)
-	set @totalda = (select sum(da) from employeeSalary es
-							join Salary s
-							on s.salID = es.salID
-							where empID = @empID)
-	
-	set @totalSalary = (@totalBasic - @totalDeduction + @totalhra + @totalda)
+	@total float,
+	@taxRate float,
+	@tax float
 
-	print cast(@totalSalary as varchar(10))
+	set @total = ( select s.salBasic + s.hra + s.da - s.deductions from employee e
+	join employeeSalary es
+		on e.empId = es.empId join Salary s
+		on s.salId = es.salId
+		where e.empId = @empId and es.tDate = @date)
 
-	if(@totalSalary <= 100000)
-	print 'Payable tax is : 0'
+		print 'Total Salary: ' + cast(@total as varchar(20))
 
-	else if(@totalSalary > 100000 and @totalSalary <= 200000)
-	print 'Payable tax is : ' + cast(@totalSalary * 0.05 as varchar(10))
+		if(@total <100000)
+		set @taxRate = 0
+		else if (@total >= 100000 and @total <200000)
+		set @taxRate = 0.05
+		else if (@total >=200000 and @total < 350000)
+		set @taxRate = 0.06
+		else 
+		set @taxRate = 0.075
 
-	else if(@totalSalary > 200000  and @totalSalary <= 350000 )
-	print 'Payable tax is : ' + cast(@totalSalary * 0.06 as varchar(10))
-
-	else if(@totalSalary > 350000 )
-	print 'Payable tax is : ' + cast(@totalSalary * 0.075 as varchar(10))
-	end
-
-	else
-	print 'Payable tax is : 0'
+		print 'Tax Percentage: '+ cast(@taxRate as varchar(20)) +'%'
+	print 'Total tax payable: '+ cast(@tax as varchar(20))
 end
 
 
 --15) Create a function that will take the basic,HRA and da returns the sum of the three
 
+create function fnSumofSalary(@SalBasic float, @hra float, @da float)
+returns float
+as 
+begin
+	declare
+	@total float
+	set @total = @SalBasic + @hra + @da
+	return @total
+end
+
+select dbo.fnSumofSalary(2000,200,400) 'sum of salary'
 
 --16) Create a cursor that will pick up every employee and print his details 
 --then print all the entries for his salary in the employeesalary table. 
 --Also show the salary splitt up(Hint-> use the salary table)
 
+declare
+@empId int,
+@empName varchar(50),
+@empAge int,
+@empPhone varchar(15),
+@empGender varchar(10)
+
+declare cur_emp cursor for select * from employee
+open cur_emp
+fetch next from cur_emp into @empId, @empName, @empAge, @empPhone,
+@empGender
+
+	while(@@FETCH_STATUS = 0)
+	begin
+		
+		print 'Employee ID	 : '+ cast(@empId as varchar(20))
+		print 'Employee Name : '+ @empName
+		print 'Employee Age	 : '+ cast(@empAge as varchar(20))
+		print 'Phone		 : '+ @empPhone
+		print 'Gender		 : '+ @empGender
+		
+		declare 
+
+		@transNo int,
+
+
+		declare @transNo int, @salId int, @tDate datetime
+		declare cur_transDetails cursor for select transNo, salId, tDate
+		from employeeSalary 
+		where empId = @empId
+
+		open cur_transDetails
+		fetch next from cur_transDetails into @transNo, @salId, @tDate
+		while(@@FETCH_STATUS = 0)
+		begin
+		   print 'Transaction No : '+ CAST(@transNo as varchar(10))
+		   print 'Salary ID : '+ CAST(@salId as varchar(10))
+		   print 'Transaction Date : '+ CAST(@tDate as varchar(20))
+   
+          fetch next from cur_transDetails into @transNo , @salId, @tDate
+		end
+		close cur_transDetails
+		deallocate cur_transDetails
+
+
+		fetch next from cur_emp into @empId, @empName, @empAge, @empPhone, @empGender
+	end
+close cur_emp
+deallocate cur_emp

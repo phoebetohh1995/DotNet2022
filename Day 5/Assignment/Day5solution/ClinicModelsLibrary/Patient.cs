@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicModelsLibrary
 {
-     class Patient : User
+     public class Patient : User
     {
         public string remarks { get; set; }
         public string status { get; set; }
@@ -16,19 +16,17 @@ namespace ClinicModelsLibrary
             type = "Patient";
         }
 
-        public override void takeUserInfo()
+        public void takePatientInfo()
         {
-            base.takeUserInfo();
+            
             Console.WriteLine("Please enter remarks :");
-            remarks = (Console.ReadLine());
+            remarks = Console.ReadLine();
             Console.WriteLine("Please enter status :");
             status = Console.ReadLine();
         }
-        public override void displayUserInfo()
+        public override string ToString()
         {
-            base.displayUserInfo();
-            Console.WriteLine("Remarks  :{0}\n" +
-                              "Status  : {1}\n", remarks, status);
+            return base.ToString() + "\n User Type : " + type + "\n  Remarks : " + remarks + "\n Status : " + status;
         }
     }
 

@@ -16,19 +16,17 @@ namespace ClinicModelsLibrary
             type = "Doctor";
         }
 
-        public override void takeUserInfo()
+        public void takeDoctorInfo()
         {
-            base.takeUserInfo();
+            
             Console.WriteLine("Please enter years of experience :");
             experience = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter specialty :");
             specialty = Console.ReadLine();
         }
-        public override void displayUserInfo()
+        public override string ToString()
         {
-            base.displayUserInfo();
-            Console.WriteLine("Experience  :{0}year(s)\n" +
-                              "Speciality  : {1}\n", experience, specialty);
+            return base.ToString() + "\n User Type :" + type + "\n Experience year(s) : " + experience + "\n Speciality : " + specialty;
         }
     }
 
