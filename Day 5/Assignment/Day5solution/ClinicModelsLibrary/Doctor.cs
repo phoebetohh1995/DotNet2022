@@ -11,14 +11,14 @@ namespace ClinicModelsLibrary
         public int experience { get; set; }
         public string specialty { get; set; }
 
-     public Doctor()
+        public Doctor()
         {
             type = "Doctor";
         }
 
         public void takeDoctorInfo()
         {
-            
+
             Console.WriteLine("Please enter years of experience :");
             experience = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter specialty :");
@@ -30,7 +30,7 @@ namespace ClinicModelsLibrary
         }
     }
 
- 
 
-    
+
+
 }

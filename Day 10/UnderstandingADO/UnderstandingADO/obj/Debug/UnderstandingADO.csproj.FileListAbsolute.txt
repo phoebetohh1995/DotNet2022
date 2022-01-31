@@ -1,0 +1,8 @@
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\bin\Debug\UnderstandingADO.exe.config
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\bin\Debug\UnderstandingADO.exe
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\bin\Debug\UnderstandingADO.pdb
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\obj\Debug\UnderstandingADO.csproj.AssemblyReference.cache
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\obj\Debug\UnderstandingADO.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\obj\Debug\UnderstandingADO.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\obj\Debug\UnderstandingADO.exe
+C:\Phoebe\Day 10\UnderstandingADO\UnderstandingADO\obj\Debug\UnderstandingADO.pdb

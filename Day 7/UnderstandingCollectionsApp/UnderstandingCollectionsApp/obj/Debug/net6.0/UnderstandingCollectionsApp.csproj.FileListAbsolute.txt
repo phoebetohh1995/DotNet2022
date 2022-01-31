@@ -1,0 +1,15 @@
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\UnderstandingCollectionsApp.exe
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\UnderstandingCollectionsApp.deps.json
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\UnderstandingCollectionsApp.runtimeconfig.json
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\UnderstandingCollectionsApp.dll
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\ref\UnderstandingCollectionsApp.dll
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\bin\Debug\net6.0\UnderstandingCollectionsApp.pdb
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.csproj.AssemblyReference.cache
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.AssemblyInfoInputs.cache
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.AssemblyInfo.cs
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.dll
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\ref\UnderstandingCollectionsApp.dll
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.pdb
+C:\Phoebe\Day 7\UnderstandingCollectionsApp\UnderstandingCollectionsApp\obj\Debug\net6.0\UnderstandingCollectionsApp.genruntimeconfig.cache

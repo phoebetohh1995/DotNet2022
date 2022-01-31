@@ -1,0 +1,8 @@
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\bin\Debug\Day6Assignment.exe.config
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\bin\Debug\Day6Assignment.exe
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\bin\Debug\Day6Assignment.pdb
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\obj\Debug\Day6Assignment.csproj.AssemblyReference.cache
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\obj\Debug\Day6Assignment.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\obj\Debug\Day6Assignment.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\obj\Debug\Day6Assignment.exe
+C:\Phoebe\Day 6\Day6Assignment\Day6Assignment\Day6Assignment\obj\Debug\Day6Assignment.pdb
