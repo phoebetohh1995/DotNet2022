@@ -1,0 +1,9 @@
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\bin\Debug\EmployeeDALLibrary.dll
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\bin\Debug\EmployeeDALLibrary.pdb
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\bin\Debug\EmployeeModelsLibrary.dll
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\bin\Debug\EmployeeModelsLibrary.pdb
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\obj\Debug\EmployeeDALLibrary.csproj.AssemblyReference.cache
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\obj\Debug\EmployeeDALLibrary.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\obj\Debug\EmployeeDALLibrary.csproj.CopyComplete
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\obj\Debug\EmployeeDALLibrary.dll
+C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeDALLibrary\obj\Debug\EmployeeDALLibrary.pdb

@@ -1,0 +1,13 @@
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\UnderstandingFEApplication.exe.config
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\UnderstandingFEApplication.exe
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\UnderstandingFEApplication.pdb
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\EntityFramework.dll
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\EntityFramework.xml
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.csproj.AssemblyReference.cache
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.csproj.CopyComplete
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.exe
+C:\Phoebe\Day 12\UnderstandingFEApplication\UnderstandingFEApplication\obj\Debug\UnderstandingFEApplication.pdb
