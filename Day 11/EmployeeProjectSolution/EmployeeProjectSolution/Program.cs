@@ -8,12 +8,7 @@ namespace EmployeeProjectSolution
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Program program = new Program();
-            program.manageMenu();
-            Console.ReadKey();
-        }
+       
 
          void manageMenu()
         {
@@ -50,10 +45,18 @@ namespace EmployeeProjectSolution
                     case 0:
                         Console.WriteLine("Exit");
                         break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again");
+                        break;
                 }
             }
             while (choice != 0);
         }
-
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            program.manageMenu();
+            Console.ReadKey();
+        }
     }
 }

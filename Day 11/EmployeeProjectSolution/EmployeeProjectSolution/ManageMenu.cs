@@ -23,8 +23,7 @@ namespace EmployeeProjectSolution
             employees = null;
             try
             {
-                
-                var employees = employeeDAL.GetAllEmployees().ToList();
+                employees = employeeDAL.GetAllEmployee().ToList();
             }
             catch (NoRecordException nre)
             {
@@ -35,14 +34,13 @@ namespace EmployeeProjectSolution
                 Console.WriteLine("Something went wrong. Will fix soon...");
                 Console.WriteLine(npe.Message);
             }
-
         }
+            
 
         public void AddEmployee()
         {
-            
-                Employee employee = new Employee();
-                employee.GetEmployeeDetails();
+            Employee employee = new Employee();
+            employee.GetEmployeeDetails();
             try
             {
                 employeeDAL.InsertNewEmployee(employee);

@@ -1,0 +1,7 @@
+SELECT TOP (1000) [stor_id]
+				, [stor_name]
+				, [stor_address]
+				, [city]
+				, [state]
+				, [zip]
+FROM [pubs].[dbo].[stores]

@@ -17,7 +17,7 @@ namespace EmployeeDALLibrary
             conn = myConnection.GetConnection();
         }
 
-        public ICollection<Employee> GetAllEmployees()
+        public ICollection<Employee> GetAllEmployee()
         {
             if (conn.State == ConnectionState.Open)
                 conn.Close();
@@ -48,8 +48,8 @@ namespace EmployeeDALLibrary
                 conn.Close();
             SqlCommand cmd = new SqlCommand("proc_AddEmployee", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@emp_name", employee.Name);
-            cmd.Parameters.AddWithValue("@emp_age", employee.Age);
+            cmd.Parameters.AddWithValue("@ename", employee.Name);
+            cmd.Parameters.AddWithValue("@eage", employee.Age);
             conn.Open();
             if (cmd.ExecuteNonQuery() > 0)
             {
@@ -65,8 +65,9 @@ namespace EmployeeDALLibrary
                 conn.Close();
             SqlCommand cmd = new SqlCommand("proc_EditEmployeeAge", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@emp_id", employee.Id);
-            cmd.Parameters.AddWithValue("@emp_age", employee.Age);
+            cmd.Parameters.AddWithValue("@eid", employee.Id);
+            cmd.Parameters.AddWithValue("@ename", employee.Name);
+            cmd.Parameters.AddWithValue("@eage", employee.Age);
             conn.Open();
             if (cmd.ExecuteNonQuery() > 0)
             {
@@ -82,7 +83,7 @@ namespace EmployeeDALLibrary
                 conn.Close();
             SqlCommand cmd = new SqlCommand("proc_DeleteEmployee", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@emp_id", id);
+            cmd.Parameters.AddWithValue("@eid", id);
             conn.Open();
             if (cmd.ExecuteNonQuery() > 0)
             {
@@ -92,15 +93,6 @@ namespace EmployeeDALLibrary
             return false;
         }
 
-        //public Employee GetEmployeeByID(int id)
-        //{
-        //    var employee = GetAllEmployees().SingleOrDefault(x => x.Id == id);
-        //    if (employee != null)
-        //    {
-        //        return employee;
-        //    }
-        //    return null;
-        //}
 
     }
 }

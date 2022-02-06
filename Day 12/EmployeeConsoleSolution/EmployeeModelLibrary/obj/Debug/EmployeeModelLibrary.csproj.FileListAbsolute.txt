@@ -1,0 +1,12 @@
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\bin\Debug\EmployeeModelLibrary.dll
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\bin\Debug\EmployeeModelLibrary.pdb
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.csproj.AssemblyReference.cache
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.dll
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\bin\Debug\EmployeeModelLibrary.dll
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\bin\Debug\EmployeeModelLibrary.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.csproj.AssemblyReference.cache
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.dll
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeModelLibrary\obj\Debug\EmployeeModelLibrary.pdb

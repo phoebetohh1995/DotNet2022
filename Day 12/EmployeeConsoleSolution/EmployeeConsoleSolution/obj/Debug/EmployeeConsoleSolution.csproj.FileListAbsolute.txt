@@ -1,0 +1,29 @@
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.exe.config
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.exe
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.pdb
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeDALLibrary.dll
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeModelLibrary.dll
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeDALLibrary.pdb
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeModelLibrary.pdb
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.AssemblyReference.cache
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.SuggestedBindingRedirects.cache
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.CoreCompileInputs.cache
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.CopyComplete
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.exe
+C:\Users\phoeb\Desktop\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.exe.config
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.exe
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeConsoleSolution.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeDALLibrary.dll
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeModelLibrary.dll
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EntityFramework.dll
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeDALLibrary.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeDALLibrary.dll.config
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EmployeeModelLibrary.pdb
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\bin\Debug\EntityFramework.xml
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.AssemblyReference.cache
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.SuggestedBindingRedirects.cache
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.CoreCompileInputs.cache
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.csproj.CopyComplete
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.exe
+C:\Phoebe\Day 12\EmployeeConsoleSolution\EmployeeConsoleSolution\obj\Debug\EmployeeConsoleSolution.pdb
