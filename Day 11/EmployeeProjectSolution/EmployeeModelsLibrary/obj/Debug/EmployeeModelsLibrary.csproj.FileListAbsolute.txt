@@ -1,6 +1,0 @@
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\bin\Debug\EmployeeModelsLibrary.dll
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\bin\Debug\EmployeeModelsLibrary.pdb
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\obj\Debug\EmployeeModelsLibrary.csproj.AssemblyReference.cache
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\obj\Debug\EmployeeModelsLibrary.csproj.CoreCompileInputs.cache
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\obj\Debug\EmployeeModelsLibrary.dll
-C:\Phoebe\Day 11\EmployeeProjectSolution\EmployeeModelsLibrary\obj\Debug\EmployeeModelsLibrary.pdb

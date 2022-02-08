@@ -8,7 +8,7 @@ namespace EmployeeConsoleSolution
 {
     class Program
     {
-        void manageMenu()
+        static void Main(string[] args)
         {
             Console.WriteLine("Welcome to menu management");
             int choice = 0;
@@ -82,12 +82,6 @@ namespace EmployeeConsoleSolution
                     Console.WriteLine(e.Message);
                 }
             } while (choice != 0);
-        }
-        static void Main(string[] args)
-        {
-            Program program = new Program();
-            program.manageMenu();
-            Console.ReadKey();
         }
     }
 }

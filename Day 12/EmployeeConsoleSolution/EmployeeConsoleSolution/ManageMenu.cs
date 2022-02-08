@@ -11,7 +11,7 @@ namespace EmployeeConsoleSolution
     internal class ManageMenu
     {
         List<Employee> employees;
-        List<Department> departments;
+        //List<Department> departments;
         EmployeeDAL employeeDAL;
 
         public ManageMenu()

@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48e2629a-bcb5-45f1-ae8d-027d30604971": {
+      "ProjectGuid": "48e2629a-bcb5-45f1-ae8d-027d30604971",
+      "DisplayName": "EmployeeConsoleSolution",
+      "ColorIndex": 0
+    },
+    "49f5296f-563c-40ec-b2e0-dcfb5aa13dac": {
+      "ProjectGuid": "49f5296f-563c-40ec-b2e0-dcfb5aa13dac",
+      "DisplayName": "EmployeeModelLibrary",
+      "ColorIndex": 1
+    },
+    "6e1e6315-9016-44d6-af01-04cc766fd30d": {
+      "ProjectGuid": "6e1e6315-9016-44d6-af01-04cc766fd30d",
+      "DisplayName": "EmployeeDALLibrary",
+      "ColorIndex": 2
+    },
+    "259197db-6a0e-4a38-8eac-fa0b854cc4a3": {
+      "ProjectGuid": "259197db-6a0e-4a38-8eac-fa0b854cc4a3",
+      "DisplayName": "EmployeeDALLibrary",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
