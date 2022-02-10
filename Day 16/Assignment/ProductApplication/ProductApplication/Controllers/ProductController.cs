@@ -45,8 +45,30 @@ namespace ProductApplication.Controllers
             Products.Add(product);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var productEdit = Products.Where(x => x.Id == id).SingleOrDefault();
+            return View(productEdit);
+        }
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
 
-        
+            Product productEdit = Products.Single(x => x.Id == product.Id);
+            productEdit.Name = product.Name;
+            productEdit.Price = product.Price;
+            productEdit.SupplierId = product.SupplierId;
+            productEdit.Quantity = product.Quantity;
+            productEdit.Remarks = product.Remarks;
+            return RedirectToAction("Index");
+        }
+        public IActionResult Details(int id)
+        {
+            var product = Products.Where(x => x.Id == id).SingleOrDefault();
+            return View(product);
+
+        }
 
 
     }
