@@ -6,6 +6,8 @@ namespace ProductApplication.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly IRepo<int, Product> _repo;
+
         static List<Product> Products = new List<Product>()
         {
             new Product()
